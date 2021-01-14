@@ -1,0 +1,29 @@
+#portfolio-data-box{
+    background-color: white;
+
+}
+hr{
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #ececec;
+    margin: 1em 0; padding: 0; 
+}
+
+#portfolio-title{
+    font-size: 35px;
+    margin: 0px 80px;
+    padding-top: 20px;
+}
+
+.portfolio-space{
+    margin: 5px 80px;
+}
+
+.portfolio-space:last-child{
+    padding-bottom: 10px;
+}
+
+.portfolio-item{
+    display: inline-block;
+    width: 150px;
+    font-size: 17px;
+}

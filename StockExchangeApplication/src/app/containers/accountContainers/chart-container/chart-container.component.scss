@@ -1,0 +1,37 @@
+#chart-box{
+    margin: 70px 200px 10px 150px;
+}
+
+#time-scope-box{
+    width: 650px;
+    margin: 5px auto 5px auto;
+}
+
+.time-scope{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 50px;
+    margin: 0 20px 0 20px;
+}
+
+.btn-underline{
+    font-size: 18px;
+    border-bottom: 2px solid #48E3C4;
+}
+
+#spinner{
+    height: 420px;
+    width: 150px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+:host ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {   
+    stroke: #48E3C4;
+}
+
+#box-center{
+    height: 420px;
+}

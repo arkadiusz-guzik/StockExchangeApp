@@ -1,0 +1,11 @@
+<div id="stock-name-box">
+    <p id="stock-shortcut">{{stockList.resultsList[this.stockId].data[0].s}}</p>
+    <p id="stock-fullname">{{subscribedStocks.stocksList[stockId].name}}</p>
+</div>
+<div id="stock-price-box">
+    <p id="stock-price">{{stockList.resultsList[this.stockId].data[0].p | currency: 'USD'}}</p>
+    <p [ngClass]="'lastPrice'>'stockList.resultsList[this.stockId].data[0].p' ? 'stock-precent-green' : 'stock-precent-red'" >{{lastPrice - stockList.resultsList[this.stockId].data[0].p | number:'.2'}} ({{precent() | percent:'.2'}} )</p>
+    <p style="clear: both;"></p>
+</div>
+<div style="clear: both;"></div>
+<hr>

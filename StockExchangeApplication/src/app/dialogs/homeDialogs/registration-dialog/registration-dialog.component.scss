@@ -1,0 +1,73 @@
+#icon{
+    float: right;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#title{
+    margin-top:50px;
+    margin-bottom: 13px;
+    font-size: 29px;
+    text-align: center;
+    clear: both;
+}
+
+.registration-box{
+    width: 380px;
+}
+
+.input-field{
+    width: 300px;
+    margin-left: 40px;
+}
+
+#btn-submit-box{
+    width: 266px;
+    margin: 17px auto 25px auto;
+}
+
+#btn-submit{
+    width: 266px;
+    height: 39px;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    color: white;
+    background-color: #48E3C4;
+    outline: none;
+}
+
+hr { 
+    display: block; 
+    width: 340px;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    margin: 0 auto; 
+    padding: 0; 
+}
+
+#dialog-footer{
+    text-align: center;
+    width: 220px;
+    height: 30px;
+    font-size: 14px;
+    margin: 20px auto 0 auto;
+}
+
+#text-footer{
+    float: left;
+    margin-right: 10px;
+}
+
+#login-link{
+    float: left;
+    font-size: 15px;
+    color: #007bff;
+}
+
+#login-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

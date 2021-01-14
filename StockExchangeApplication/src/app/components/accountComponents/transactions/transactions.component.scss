@@ -1,0 +1,26 @@
+.form-box{
+    margin: 20px 40px;
+}
+
+.transaction-box{
+    margin: 10px 30px;
+    display: inline-block;
+    height: 65px;
+}
+
+#transaction-btn{
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    width: 168px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+p{
+    margin-right: 15px;
+    font-size: 18px;
+    display: inline-block;
+}

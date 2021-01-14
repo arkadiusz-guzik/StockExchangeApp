@@ -1,0 +1,9 @@
+<div id="search-container">
+    <button (click)="doSearch(myInput.value)" id="search-button">
+        <mat-icon aria-hidden="false" aria-label="Search a stock" id="search-icon">search</mat-icon>
+    </button>
+    <input #myInput type="text"
+            placeholder="Search by stock name"
+            id="search-input"
+           (keyup.enter)="doSearch(myInput.value)" />
+</div>

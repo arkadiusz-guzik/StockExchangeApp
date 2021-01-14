@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+    background-color: transparent;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.mat-header-cell{
+  font-size: 19px;
+}
+
+.mat-cell{
+  font-size: 17px;
+}
+
+th.mat-header-cell:first-of-type{
+  padding-left: 80px;
+}
+
+.mat-cell{
+  padding: 20px 0px 20px 0px;
+}
+
+.mat-footer-cell{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0px 20px 0px;
+}
+
+.mat-cell:first-of-type{
+  padding: 20px 0px 20px 80px;
+}
+  

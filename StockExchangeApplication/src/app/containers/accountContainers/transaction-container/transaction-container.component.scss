@@ -1,0 +1,13 @@
+mat-tab-group{
+  
+    width: 100%;
+}
+
+
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+    font-size: 18px;
+  }
+
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background:#48E3C4;
+  }

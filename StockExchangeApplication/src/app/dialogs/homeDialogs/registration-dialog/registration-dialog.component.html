@@ -1,0 +1,37 @@
+<mat-icon id="icon" aria-hidden="false" aria-label="close icon" (click)="closeDialog()">close</mat-icon>
+<div id="title">Sign Up</div>
+<form [formGroup]="registrationFormGroup" (ngSubmit)="onSubmit()" id="form-box">
+    <div formGroupName="registration">
+        <div class="registration-box">
+            <mat-form-field class="input-field">
+                <mat-label>Username</mat-label>
+                <input matInput type="text" formControlName="username">
+            </mat-form-field>
+        </div>
+        <div class="registration-box">
+            <mat-form-field class="input-field">
+                <mat-label>Email</mat-label>
+                <input matInput type="text" formControlName="email">
+            </mat-form-field>
+        </div>
+        <div class="registration-box">
+            <mat-form-field class="input-field">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password" autocomplete="on">
+            </mat-form-field>
+        </div>
+        <div class="registration-box">
+            <mat-form-field class="input-field">
+                <mat-label>Confirm password</mat-label>
+                <input matInput type="password" formControlName="confirmPassword" autocomplete="on">
+            </mat-form-field>
+        </div>
+        <div class="registration-box" id="btn-submit-box">
+            <button mat-button id="btn-submit" type="submit">Join us</button>
+        </div>
+    </div>
+</form>    
+<hr>
+<div id="dialog-footer">
+    <div id="text-footer">Do you have an account?</div><div id="login-link" (click)="openLoginDialog()">Sign In</div>
+</div>

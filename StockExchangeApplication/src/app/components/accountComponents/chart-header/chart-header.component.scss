@@ -1,0 +1,46 @@
+#stock-name-box{
+    float: left;
+}
+
+#stock-price-box{
+    float: right;
+}
+
+#stock-shortcut{
+    font-size: 30px;
+    margin: 0px;
+}
+
+#stock-fullname{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#stock-price{
+    font-size: 40px;
+    margin: 0px;
+}
+
+.stock-precent-red{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: right;
+    font-size: 15px;
+    color: #F25555;
+}
+
+.stock-precent-green{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: right;
+    font-size: 15px;
+    color: #26e676;
+}
+
+hr{
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #ebebeb;
+    margin: 1em 0; padding: 0; 
+}
+

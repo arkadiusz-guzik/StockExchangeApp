@@ -1,0 +1,48 @@
+#icon{
+    float: right;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#filed-box{
+    display:flex;
+    align-items: center;
+    margin: 15px auto;
+    width: 370px;
+}
+
+#message{
+    float: left;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+#password-field{
+    float: left;
+}
+
+#btn-submit-box{
+    margin-top: 15px;
+    clear: both;
+}
+
+#submit-btn{
+    margin-right: 15px;
+}
+
+#close-btn{
+    margin-left: 15px;
+}
+
+#dialog-content{
+    width: 400px;
+    height: 130px;
+    margin: 40px;
+    text-align: center;
+}
+
+#question{
+    font-size: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,7 @@
+<div *ngFor="let item of this.stockList.resultsList; index as i">
+    <div class="item-box" (click)="setStockId(i)">
+        <div class="item-inf">{{item.data[0].s}}</div>  
+        <div class="item-price">{{item.data[0].p | currency:'USD'}}</div>
+        <div style="clear:both;"></div>
+    </div>
+</div>

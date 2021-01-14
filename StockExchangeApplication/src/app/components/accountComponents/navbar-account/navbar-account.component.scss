@@ -1,0 +1,43 @@
+nav{
+    width: auto;
+    float: right;
+    margin: 30px 250px auto auto;
+    font-size: 16px;
+}
+nav>ul>li{
+    display: inline-block;
+    list-style: none;
+    width: 100px;
+    margin: 0px 10px;
+}
+
+a{
+    color:black;
+}
+
+.nav-item{
+    text-decoration-line: none;
+}
+
+.btn-color{
+    color: #2be2be;
+    font-size: 19px;
+}
+
+.nav-item:hover{
+    font-size: 19px;
+    color:  #2be2be;
+    transition: 0.5s;
+}
+
+#wrap-btn{
+    font-size: 17px;
+    color: white;
+    min-width: 145px;
+    height: 45px;
+    background-color: #5ef5d7;
+}
+
+#wrap-icon{
+    margin-top: 2px;
+}

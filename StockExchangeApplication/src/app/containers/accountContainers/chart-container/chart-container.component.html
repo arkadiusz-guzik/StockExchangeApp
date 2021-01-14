@@ -1,0 +1,20 @@
+<div id="chart-box">
+    <app-chart-header [stockList]="stockList" [stockId]="stockId" [lastPrice]="lastPrice" [subscribedStocks]="subscribedStocks"></app-chart-header>
+    <div id="box-center">
+        <app-linear-chart *ngIf="chartData" [chartData]="chartData"></app-linear-chart>
+        <div id="spinner" *ngIf="!chartData">
+            <mat-progress-spinner [mode]="mode"></mat-progress-spinner>
+        </div>
+    </div>
+    <div id="time-scope-box" >
+        <div class="time-scope" (click)="uploadData('1')" [ngClass]="{'btn-underline': clear('1')}">1min</div>
+        <div class="time-scope" (click)="uploadData('5')" [ngClass]="{'btn-underline': clear('5')}">5min</div>
+        <div class="time-scope" (click)="uploadData('15')" [ngClass]="{'btn-underline': clear('15')}">15min</div>
+        <div class="time-scope" (click)="uploadData('30')" [ngClass]="{'btn-underline': clear('30')}">30min</div>
+        <div class="time-scope" (click)="uploadData('60')" [ngClass]="{'btn-underline': clear('60')}">1h</div>
+        <div class="time-scope" (click)="uploadData('D')" [ngClass]="{'btn-underline': clear('D')}">1D</div>
+        <div class="time-scope" (click)="uploadData('W')" [ngClass]="{'btn-underline': clear('W')}">1W</div>
+    </div>
+    <app-transaction-container [stockList]="stockList" [stockId]="stockId" [subscribedStocks]="subscribedStocks"></app-transaction-container>
+</div>
+

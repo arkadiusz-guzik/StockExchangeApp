@@ -1,0 +1,48 @@
+table {
+  width: 100%;
+  background-color: white;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+th.mat-header-cell:first-of-type{
+  padding-left: 80px;
+}
+
+.mat-cell:first-of-type{
+  padding: 25px 0px 25px 80px;
+}
+
+
+.mat-column-date{
+  width: 5%;
+}
+.mat-column-action{
+  width: 5%;
+}
+.mat-column-name{
+  width: 5%;
+}
+.mat-column-price{
+  width: 5%;
+}
+.mat-column-number{
+  width: 5%;
+}
+.mat-column-totalPrice{
+  width: 5%;
+}
+.mat-column-accountBalance{
+  width: 5%;
+}
+
+.mat-header-cell{
+   font-size: 19px;
+}
+
+.mat-cell{
+   font-size: 17px;
+}
+

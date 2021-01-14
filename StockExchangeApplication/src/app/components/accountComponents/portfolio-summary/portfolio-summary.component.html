@@ -1,0 +1,17 @@
+<div id="portfolio-data-box" class="mat-elevation-z8">
+        <p id="portfolio-title">Portfolio</p>
+        <hr>
+        <div class="portfolio-space">
+            <p class="portfolio-item">Total value:</p> <p class="portfolio-item">{{this.accountBalance+stockValue() | currency: 'USD'}}</p>
+        </div>
+        <div class="portfolio-space">
+            <p class="portfolio-item">Stocks:</p> <p class="portfolio-item">{{stockValue() | currency:'USD'}}</p>
+        </div>
+        <div class="portfolio-space">
+            <p class="portfolio-item">Equity:</p> <p class="portfolio-item">{{this.accountBalance | currency: 'USD'}}</p>
+        </div>
+        <hr>
+        <div class="portfolio-space">
+            <p class="portfolio-item">Profit:</p> <p class="portfolio-item">{{computeProfit() | currency: 'USD'}}</p>
+        </div>
+</div>

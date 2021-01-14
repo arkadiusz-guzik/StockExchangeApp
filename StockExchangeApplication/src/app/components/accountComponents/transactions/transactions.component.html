@@ -1,0 +1,23 @@
+<form [formGroup]="transactionFormGroup" (ngSubmit)="onSubmit()" class="form-box">
+    <div formGroupName="transaction">
+        <div class="transaction-box">
+            <p>Price: </p>
+            <p>{{ this.stockList.resultsList[this.stockId].data[0].p | currency:'USD'}}</p>
+        </div>
+        <div class="transaction-box">
+            <mat-form-field >
+                <mat-label>Number of stocks</mat-label>
+                <input matInput type="text" formControlName="number" [maxlength]="5" (ngModelChange)="modelChangeNumber($event)" >
+            </mat-form-field>
+        </div>
+        <div class="transaction-box">
+            <button id="transaction-btn" type="submit" [ngStyle]="{
+                'background-color' : color ? '#48E3C4' : '#F25555'
+            }">{{action}}</button>
+        </div>
+        <div class="transaction-box" >
+            <p>Total:</p>
+            <p>{{totalSum | currency:'USD'}}</p>
+        </div>
+    </div>
+</form>    

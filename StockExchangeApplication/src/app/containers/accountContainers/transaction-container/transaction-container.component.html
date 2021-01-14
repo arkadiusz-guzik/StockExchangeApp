@@ -1,0 +1,8 @@
+<mat-tab-group>
+    <mat-tab label="Buy" >
+        <app-transactions  [action]="buy" [stockList]="stockList" [userId]="userId" [stockId]="stockId" [subscribedStocks]="subscribedStocks" [chartsService]="chartsService" [token]="token"></app-transactions>
+    </mat-tab>
+    <mat-tab label="Sell"> 
+        <app-transactions  [action]="sell" [stockList]="stockList" [userId]="userId" [stockId]="stockId" [subscribedStocks]="subscribedStocks" [chartsService]="chartsService" [token]="token"></app-transactions>
+    </mat-tab>
+</mat-tab-group>

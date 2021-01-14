@@ -1,0 +1,30 @@
+#nav-box{
+    font-size: 16px;
+    color: white;
+    margin: 50px 90px;
+}
+
+.nav-item{
+    height: 34px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 80px;
+    float: left;
+}
+
+#btn-registration{
+    width: 150px;
+    float: left;
+    background-color: #02ac46;
+    margin-left: 7px;
+}
+
+#btn-login{
+    margin-left: 25px;
+    color:#049e41;
+    background-color:#f0f0f0;
+    border-color: #049e41;
+    width: 100px;
+    float: left;
+}
