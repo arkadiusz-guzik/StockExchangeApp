@@ -1,0 +1,31 @@
+version: "3"
+services:
+   db:
+      build: ./StockExchangeDb/
+      ports: 
+            - 3307:3306
+      restart: always
+      volumes:
+            - ./db_data_volume:/var/lib/mysql:rw
+            - ./StockExchangeDb/create-db.sql:/docker-entrypoint-initdb.d/create-db.sql:ro
+      environment:
+            - MYSQL_DATABASE=stock_exchange_db
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_USER=root
+   frontend:
+      build: ./StockExchangeApplication/
+      links:
+            - "backend"
+      depends_on:
+            - "backend"
+      ports:
+            - "4200:80"
+   backend:
+      build: ./StockExchangeApplicationApi/
+      ports:
+            - "8080:8080"
+      depends_on:
+         - db
+      restart: always
+volumes:
+   db_data_volume:     

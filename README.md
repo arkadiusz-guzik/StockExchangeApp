@@ -8,7 +8,7 @@ The user can create an account where entered password is encoded using bcrypt ha
 
 ## Installation
 
-In the first step you have to create database using the 'create-db.sql' file. Then go to the 'websocket-key.ts' file located in the `StockExchangeApplication\src\app\models` directory and enter a valid value for the TOKEN variable. Open the 'StockExchangeApplication' directory in a terminal and run a dev server using the `ng serve` command (`http://localhost:4200/`). In a another terminal window open the'StochExchangeApplicationApi' directory and compile a project using `mvn install` command and then enter `java -jar target/StockExchangeApplicationApi-0.0.1-SNAPSHOT.jar` to run it. Navigate to `http://localhost:4200/`.
+In the first step you have to go to the 'websocket-key.ts' file located in the `StockExchangeApplication\src\app\models` directory and enter a valid value for the TOKEN variable. Open the 'StockExchangeApp' directory in a terminal and enter the `docker-compose up --build` command to run all services. Navigate to `http://localhost:4200/`.
 
 ## Images
 <img src="readme-images/img_0.jpg" width="800"/>

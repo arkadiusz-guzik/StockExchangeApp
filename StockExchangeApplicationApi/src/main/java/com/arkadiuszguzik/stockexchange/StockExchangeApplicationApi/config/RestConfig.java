@@ -40,18 +40,18 @@ public class RestConfig implements RepositoryRestConfigurer {
         ComboPooledDataSource myDataSource = new ComboPooledDataSource();
 
         try {
-            myDataSource.setDriverClass("com.mysql.jdbc.Driver");
+            myDataSource.setDriverClass(env.getProperty("spring.datasource.driver-class-name"));
         }
         catch (PropertyVetoException exc) {
             throw new RuntimeException(exc);
         }
 
-        logger.info("jdbc.url=" + env.getProperty("jdbc.url"));
-        logger.info("jdbc.user=" + env.getProperty("jdbc.user"));
+        logger.info("jdbc.url=" + env.getProperty("spring.datasource.url"));
+        logger.info("jdbc.user=" + env.getProperty("spring.datasource.username"));
 
-        myDataSource.setJdbcUrl(env.getProperty("jdbc.url"));
-        myDataSource.setUser(env.getProperty("jdbc.user"));
-        myDataSource.setPassword(env.getProperty("jdbc.password"));
+        myDataSource.setJdbcUrl(env.getProperty("spring.datasource.url"));
+        myDataSource.setUser(env.getProperty("spring.datasource.username"));
+        myDataSource.setPassword(env.getProperty("spring.datasource.password"));
 
         myDataSource.setInitialPoolSize(getIntProperty("connection.pool.initialPoolSize"));
         myDataSource.setMinPoolSize(getIntProperty("connection.pool.minPoolSize"));

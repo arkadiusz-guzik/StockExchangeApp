@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "StockExchangeApp": {
+    "StockExchangeApplication": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -19,7 +19,7 @@
           "options": {
             "showCircularDependencies": false,
             "allowedCommonJsDependencies":["apexcharts"],
-            "outputPath": "dist/StockExchangeApp",
+            "outputPath": "dist/StockExchangeApplication",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "StockExchangeApp:build"
+            "browserTarget": "StockExchangeApplication:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "StockExchangeApp:build:production"
+              "browserTarget": "StockExchangeApplication:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "StockExchangeApp:build"
+            "browserTarget": "StockExchangeApplication:build"
           }
         },
         "test": {
@@ -122,16 +122,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "StockExchangeApp:serve"
+            "devServerTarget": "StockExchangeApplication:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "StockExchangeApp:serve:production"
+              "devServerTarget": "StockExchangeApplication:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "StockExchangeApp"
+  "defaultProject": "StockExchangeApplication"
 }
